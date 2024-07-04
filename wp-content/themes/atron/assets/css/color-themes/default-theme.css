@@ -200,9 +200,14 @@ a,
 .news-block-four .inner-box .image .post-date,
 .blog-detail .inner-box .image .post-date,
 .ui-state-active, .ui-widget-content .ui-state-active,
-.team-block .inner-box .overlay-content .share-box .social-box li a:hover{
-	background-color:#cc8809;
+.team-block .inner-box .overlay-content .share-box .social-box li a:hover {
+    background: linear-gradient(to right, #cc8809, #3e2901);
+    background-size: 200% 200%;
+    background-position: left center;
+    transition: background-position 0.3s ease-in-out;
 }
+
+
 
 .gallery-block .overlay-box{
 	background-color:rgba(204,136,9,0.60);
