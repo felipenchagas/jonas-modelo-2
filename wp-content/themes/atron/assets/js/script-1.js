@@ -55,7 +55,7 @@ if($('.main-header li.dropdown ul').length){
     });
     */
     
-    // Disable dropdown parent link (Second Time)
+    // Disable dropdown parent link (Second Time) ok
     // Commenting out this block to allow parent link click
     /*
     $('.main-header .navigation li.dropdown > a,.hidden-bar .side-menu li.dropdown > a').on('click', function(e) {
