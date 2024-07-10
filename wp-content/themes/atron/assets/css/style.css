@@ -2270,7 +2270,7 @@ img{
 
 .main-slider .slide{
 	position:relative;
-	padding:180px 0px 180px;
+	padding:50px 0px 180px;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -2293,7 +2293,7 @@ img{
 .main-slider .icon-box img{
 	position:relative;
 	width:auto;
-	opacity:0.30;
+	opacity:0.70;
 	margin:0 auto;
 }
 
