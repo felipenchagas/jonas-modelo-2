@@ -9840,6 +9840,21 @@ img{
 	padding:30px 40px;
 	border:1px solid #cccccc;
 }
+@media (max-width: 768px) {
+  .sidebar-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-side {
+    order: 1;
+  }
+
+  .sidebar-side {
+    order: 2;
+  }
+}
+
 
 /* Blog Cat */
 

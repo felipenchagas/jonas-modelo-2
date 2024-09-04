@@ -1,0 +1,19 @@
+.teste {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+  .teste {
+    flex-direction: column-reverse; /* Inverte a ordem */
+  }
+  
+  .div1 {
+    order: 1; /* Garante que a div1 apareça primeiro */
+  }
+
+  .div2 {
+    order: 2; /* Garante que a div2 apareça em segundo */
+  }
+}
