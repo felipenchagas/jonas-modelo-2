@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.city-button {
+    background: linear-gradient(90deg, #865916 0%, #cb8826 100%); /* Degradê escuro para mais claro */
+    color: white; /* Cor do texto branco */
+    border: 6px solid #222222; /* Mesma borda das células da tabela */
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.city-button.active, .city-button:hover {
+    background-color: #5d5d5d; /* Cor de hover mais clara */
+    color: white; /* Texto permanece branco */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+}
+
+
+/* Barra de rolagem para navegadores WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 16px; /* Define a largura da barra de rolagem */
+}
+
+/* Parte de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #222222; /* Cor de fundo da barra de rolagem */
+}
+
+/* Parte de rolagem da barra */
+::-webkit-scrollbar-thumb {
+    background-color: #865916; /* Cor da parte que desliza */
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+    border: 3px solid #222222; /* Adiciona uma borda para melhorar o contraste */
+}
+
+/* Quando a parte de rolagem estiver sendo pressionada */
+::-webkit-scrollbar-thumb:active {
+    background-color: #cb8826; /* Cor mais clara quando em uso */
+}
+
+
+.location-container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.city-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.city-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.city-button.active, .city-button:hover {
+    background-color: #0056b3;
+}
+
+.city-areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.area {
+    display: none;
+}
+
+.area.active {
+    display: block;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 15px;
+    border: 6px solid #222222;
+    text-align: center;
+    background: linear-gradient(90deg, #865916 0%, #cb8826 100%); /* Degradê escuro para mais claro */
+    color: #ffffff; /* Texto branco */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra suave no texto para contraste */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+td a {
+    color: #ffffff; /* Links em branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+td a:hover {
+    color: #222222; /* Cor levemente mais clara no hover */
+}
+
+td:hover {
+    background-color: #5d5d5d; /* Cor de hover mais clara */
+}
+
+@media (max-width: 768px) {
+    .city-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+}
